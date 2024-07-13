@@ -44,9 +44,9 @@ return require("packer").startup(function(use)
   use("nvim-treesitter/playground")
 
   use({
-          "theprimeagen/harpoon",
-          branch = "harpoon2",
-          })
+      "theprimeagen/harpoon",
+      branch = "harpoon2",
+      })
 
   use("theprimeagen/vim-be-good")
   use("theprimeagen/refactoring.nvim")
