@@ -35,12 +35,12 @@ return require("packer").startup(function(use)
       end
   })
 
-  use {
-			'nvim-treesitter/nvim-treesitter',
-			run = function()
-				local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
-				ts_update()
-			end,}
+  use({
+        'nvim-treesitter/nvim-treesitter',
+        run = function()
+            local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
+            ts_update()
+        end,})
   use("nvim-treesitter/playground")
 
   use({
@@ -81,6 +81,8 @@ return require("packer").startup(function(use)
   use("github/copilot.vim")
   use("eandrju/cellular-automaton.nvim")
   use("laytan/cloak.nvim")
-
+  use("feline-nvim/feline.nvim")
+  use("nvim-lualine/lualine.nvim")
+  use("nvim-tree/nvim-web-devicons")
 end)
 
