@@ -32,6 +32,9 @@ sh install.sh
 # install powerlevel10k
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
+# install fonts-powerline
+sudo apt install fonts-powerline
+
 # edit .zshrc and add in
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
